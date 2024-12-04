@@ -1,0 +1,25 @@
+services:
+  app:
+    build: .
+    ports:
+      - 8081-8082:8080
+    deploy:
+      mode: replicated
+      replicas: 2
+    networks:
+      - exchange-service-network
+
+  nginx:
+    image: nginx:1.27-alpine
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    networks:
+      - exchange-service-network
+    depends_on:
+      - app
+
+networks:
+  exchange-service-network:
+    driver: bridge
