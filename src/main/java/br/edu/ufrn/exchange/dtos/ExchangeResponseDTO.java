@@ -5,13 +5,13 @@ public class ExchangeResponseDTO {
     private Double usd = Double.valueOf(1.0);
 
     private String to;
-    private Double value;
+    private Double rate;
 
     public ExchangeResponseDTO() {};
 
-    public ExchangeResponseDTO(String to, Double value) {
+    public ExchangeResponseDTO(String to, Double rate) {
         this.to = to;
-        this.value = value;
+        this.rate = rate;
     }
 
     public Double getUsd() {
@@ -30,12 +30,12 @@ public class ExchangeResponseDTO {
         this.to = to;
     }
 
-    public Double getValue() {
-        return this.value;
+    public Double getRate() {
+        return this.rate;
     }
 
-    public void setValue(Double value) {
-        this.value = value;
+    public void setRate(Double rate) {
+        this.rate = rate;
     }
 
 }
