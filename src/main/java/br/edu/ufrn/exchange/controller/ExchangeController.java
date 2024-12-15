@@ -1,4 +1,4 @@
-package br.edu.ufrn.exchange.controllers;
+package br.edu.ufrn.exchange.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.edu.ufrn.exchange.dtos.ExchangeResponseDTO;
-import br.edu.ufrn.exchange.services.ExchangeService;
+import br.edu.ufrn.exchange.dto.ExchangeResponseDTO;
+import br.edu.ufrn.exchange.service.ExchangeService;
 
 @RestController
 @RequestMapping("/exchange")

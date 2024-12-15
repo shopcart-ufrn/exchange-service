@@ -1,12 +1,12 @@
-package br.edu.ufrn.exchange.services;
+package br.edu.ufrn.exchange.service;
 
 import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.edu.ufrn.exchange.clients.FreeCurrencyAPI;
-import br.edu.ufrn.exchange.dtos.ExchangeResponseDTO;
+import br.edu.ufrn.exchange.client.FreeCurrencyAPI;
+import br.edu.ufrn.exchange.dto.ExchangeResponseDTO;
 
 @Service
 public class ExchangeService {

@@ -1,4 +1,4 @@
-package br.edu.ufrn.exchange.dtos;
+package br.edu.ufrn.exchange.dto;
 
 import java.util.Map;
 
