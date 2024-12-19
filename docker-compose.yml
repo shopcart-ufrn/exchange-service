@@ -6,8 +6,6 @@ services:
     deploy:
       mode: replicated
       replicas: 2
-    env_file:
-      - .env
     networks:
       - exchange-service-network
 
